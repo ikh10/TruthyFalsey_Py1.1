@@ -9,6 +9,17 @@ The basic rules are:
 When used in conditions, 0, 0.0, and '' (the empty string) are considered False, while all other values are considered True."         
 **Source: Automate the Boring Stuff with Python**
 
+*You can check if a value is either truthy or falsy with the built-in `bool()` function.*
+
+  According to the **Python Documentation**, this function:
+
+      Returns a Boolean value, i.e. one of `True` or `False`. x (the argument) is converted using the standard truth testing procedure.
+
+*With the special method `__bool__()`, you can set a "customized" condition that will determine when an object of your class will evaluate to `True` or `False`.*
+
+  According to the **Python Documentation**:
+
+      By default, an object is considered true unless its class defines either a __bool__() method that returns False or a __len__() method that returns zero, when called with the object.
 
 ## ❌ Falsy Values
 
@@ -33,6 +44,6 @@ These values **evaluate to `True`** in a Boolean context:
 
 Understanding truthy and falsy values helps with:
 
-- Writing cleaner if conditions
+- Writing cleaner and concise code
 - Avoiding unnecessary comparisons
 - Debugging control flow issues
